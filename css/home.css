@@ -1,0 +1,28 @@
+body{
+    background-color: gray;
+}
+*{
+    border: black 1px solid;
+    margin: 1px;
+}
+
+.split{
+    display: flex;
+}
+.split > *{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container > div{
+    width: 70%;
+}
