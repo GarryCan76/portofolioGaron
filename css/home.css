@@ -1,28 +1,96 @@
-body{
-    background-color: gray;
-}
-*{
-    border: black 1px solid;
-    margin: 1px;
+html{
+    height: 100%;
 }
 
+body{
+    height: 100%;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+}
+*{
+    /*border: gray 1px solid;*/
+    margin: 0;
+    color: white;
+}
+
+/*default classes*/
+strong{
+    color: rgb(226, 185, 103);
+}
+button{
+    background-color: #323232;
+}
 .split{
     display: flex;
 }
-.split > *{
+.split > div{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-
-
-
-.container{
+.tags:hover > strong{
+    background-color: rgb(59, 81, 77);
+}
+.tags-around{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+    border: #323232 solid 3px;
+}
+.tags-around:hover > strong{
+    background-color: rgb(59, 81, 77);
+    width: 5%;
+}
+.number{
+    color: #5190a5;
+}
+
+/*file explorer*/
+#file-explorer{
+    background-color: #3c3f41;
+    width: 25%;
+    min-width: 200px;
+    height: 100%;
+}
+.file > *{
+    margin-left: 10%;
+}
+
+
+
+
+/*container*/
+#container{
+    display: flex;
     align-items: center;
     flex-direction: column;
+    height: 100%;
 }
-.container > div{
+#container > div{
+    margin: 1%;
+}
+#container > div{
     width: 70%;
+}
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 30%;
+}
+h1{
+    font-size: 90px;
+}
+
+
+.projects{
+    display: flex;
+}
+.projects > li{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 30%;
+    margin: 2%;
 }
