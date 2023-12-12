@@ -5,8 +5,8 @@ const jsml = new Jsml();
 export function homePage (){
     let elements = [];
 // welcome
-    elements.push(jsml.createHTMLElement('h1', document.getElementById('welcome'), 'Garon', 'inside'))
-    elements.push(jsml.createHTMLElement('h2', document.getElementById('welcome'), 'Welcome to my portfolio', 'inside'))
+    elements.push(jsml.createHTMLElement('h1', document.getElementById('welcome'), 'title', 'inside'))
+    elements.push(jsml.createHTMLElement('h2', document.getElementById('welcome'), 'Welcome to my homepage name', 'inside'))
 
 // about me
     let aboutH2 = jsml.createHTMLElement('h2', document.getElementById('about-me'), 'About me', 'inside');

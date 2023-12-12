@@ -45,7 +45,7 @@ export default class Jsml {
                         e[key].add(classItem)
                     })
                 } else if (key === 'addEventListener') {
-                    e[key](attributes[key][0], attributes[key][1])
+                    e[key](attributes[key][0], attributes[key][1]);
                 } else {
                     e[key] = attributes[key];
                 }
@@ -56,7 +56,9 @@ export default class Jsml {
         if (childrenArray) {
             childrenArray.forEach(child => {
                 if (Object.keys(child).length > 0) {
-                    this.createHTMLElement(Object.keys(child), e, child[Object.keys(child)]['attributes'], child[Object.keys(child)]['children'])
+                    let at = child[Object.keys(child)]['attributes'];
+                    console.log(at)
+                    this.createHTMLElement(Object.keys(child), e, false, false, at, child[Object.keys(child)]['children'])
                 } else {
                     e.appendChild(child)
                 }
