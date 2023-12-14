@@ -11,15 +11,6 @@
 <body>
 <div id="file-explorer"></div>
 <div id="container">
-    <div id="welcome"></div>
-
-    <div id="about-me"></div>
-
-    <div id="my-projects"></div>
-
-    <div id="testimonials"></div>
-
-    <div id="contact-me">
     </div>
 </div>
 </body>
