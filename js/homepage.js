@@ -14,25 +14,24 @@ export function homePage (){
     container.appendChild(jsml.elementFromHtml('<div id="contact-me">'))
 
 // title
-    elements.push(jsml.createHTMLElement('h1', document.getElementById('title'), 'title', 'inside'))
+    elements.push(jsml.createHTMLElement('h1', document.getElementById('title'), 'Garon el Malli', 'inside'))
     elements.push(jsml.createHTMLElement('h2', document.getElementById('title'), 'Welcome to my homepage name', 'inside'))
 
 // about me
     let aboutH2 = jsml.createHTMLElement('h2', document.getElementById('about-me'), 'About me', 'inside');
-    let aboutH3 = jsml.createHTMLElement('h3', false, 'Who am I', 'inside');
+    let aboutH3 = jsml.createHTMLElement('h3', false, 'About me', 'inside');
     let aboutP = jsml.createHTMLElement('p', false,
-        'Lorem ipsum dolor sit amet. Qui quaerat nostrum qui facilis culpa rem cumque amet quo ' +
-        'nihil commodi vel iste alias aut velit soluta. Aut dicta facilis ab modi Quis ea ' +
-        'velit officiis At soluta exercitationem aut magni quia At debitis corporis ea nemo quae.',
-        'around');
+        `Hello, I'm Garon el Malli 20 years old and I am a web developer. I live in Apeldoorn with my family and my cat Hector.
+        I like to listen to music, watch movies and play games. My favorite artist is beethoven :) and my favorite movie director is Stanley Kubric.
+        I tend to be relatively quiet when I'm working, but if I'm working in a group I have no problem communicating. I have heard people say I am more of a programmer than a web
+         developer, so yea if you need so code dont mind asking me.`);
     let about1 = jsml.createHTMLElement('div', false, '', false, false, [aboutH3, aboutP]);
 
-    aboutH3 = jsml.createHTMLElement('h3', false, 'My goals', 'inside');
+    aboutH3 = jsml.createHTMLElement('h3', false, 'My goals and skills', 'inside');
     aboutP = jsml.createHTMLElement('p', false,
-        'Lorem ipsum dolor sit amet. Qui quaerat nostrum qui facilis culpa rem cumque amet quo ' +
-        'nihil commodi vel iste alias aut velit soluta. Aut dicta facilis ab modi Quis ea ' +
-        'velit officiis At soluta exercitationem aut magni quia At debitis corporis ea nemo quae.',
-        'around');
+        `I wish to reach my maximum potential when it comes to programming, I really have a passion for it and I like to learn new things and improve my own work style.
+        I would say that I am quite well versed in JavaScript and python. I really enjoy JavaScript and I like to find new ways to make my code more efficient. I think one of my skills is also:
+        being able to adapt to different work styles.`);
     let about2 = jsml.createHTMLElement('div', false, '', false, false, [aboutH3, aboutP]);
     let aboutSplit = jsml.createHTMLElement('div', document.getElementById('about-me'), '', 'around', {'classList':'split'}, [about1, about2]);
 

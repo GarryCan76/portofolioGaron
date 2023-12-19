@@ -40,16 +40,6 @@ let projectsData = [
 ];
 let tagStyle = jsml.createHTMLElement('style', fileExplorer, 'strong{display: inline-block;}')
 let tags = true;
-jsml.createHTMLElement('button', fileExplorer, 'hide tags', false, {'classList':'text', 'addEventListener':['click', ()=>{
-    if (tags){
-        tagStyle.innerHTML = 'strong{display: none;}';
-        tags = false;
-    }else {
-        tagStyle.innerHTML = 'strong{display: inline-block;}';
-        tags = true;
-    }
-        console.log(tags)
-    }]})
 let projectsList = [];
 projectsData.forEach(projectData=>{
     let p = createFile(false, projectData.name, false, Project, projectData)
@@ -58,6 +48,16 @@ projectsData.forEach(projectData=>{
 let projects = createFile(false, 'projects', projectsList)
 
 let portfolio = createFile(fileExplorer, 'portfolio', [home, projects])
+jsml.createHTMLElement('button', fileExplorer, 'hide tags', false, {'classList':'hide-tag', 'addEventListener':['click', ()=>{
+        if (tags){
+            tagStyle.innerHTML = 'strong{display: none;}';
+            tags = false;
+        }else {
+            tagStyle.innerHTML = 'strong{display: inline-block;}';
+            tags = true;
+        }
+        console.log(tags)
+    }]})
 
 
 

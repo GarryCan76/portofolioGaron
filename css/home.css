@@ -10,6 +10,17 @@ body{
     margin: 0;
     color: white;
 }
+p{
+    font-size: 1.5em;
+}
+h1{
+    font-size: 7em;
+    white-space: break-spaces;
+}
+h2{
+    white-space: break-spaces;
+    font-size: 3em;
+}
 
 /*default classes*/
 strong{
@@ -25,6 +36,7 @@ button{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin: 2%;
 }
 .split-image{
     max-width: 100%;
@@ -62,18 +74,36 @@ button{
     width: 30%;
     min-width: 200px;
     max-width: 250px;
-    min-height: 100%;
+    position: relative;
+}
+#file-explorer p{
+    font-size: 1em;
+}
+#file-explorer > div{
+    width: 20%;
+    min-width: 200px;
+    max-width: 200px;
     overflow: hidden;
+    position: fixed;
 }
 .file > *{
+    position: sticky;
     margin-left: 10%;
     margin-top: 1%;
 }
+#file-explorer > .file > p{
+     margin-left: 1%;
+ }
+
 .file i{
     margin: 2%;
 }
 .text{
     cursor: pointer;
+}
+.hide-tag{
+    position: fixed;
+    bottom: 1px;
 }
 
 
@@ -86,20 +116,15 @@ button{
 }
 #container > div{
     margin: 1%;
-}
-#container > div{
-    width: 70%;
+    width: 95%;
 }
 
 #title{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 30%;
-    min-width: 100%;
-}
-h1{
-    font-size: 90px;
+    height: 80vh;
+    min-width: 95%;
 }
 
 
